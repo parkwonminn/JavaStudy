@@ -39,5 +39,11 @@ public class C02This {
         //lastIndexOf("문자열") : 문자열의 index 번호 확인
         System.out.println(tmp.lastIndexOf("H"));
         //contains("문자열") : 문자열 포함여부
+
+        //split("구분자") : 구분자를 기준으로 문자열을 분활(배열형으로 저장)
+        String[] arr = tmp.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("arr[%d] =  %s\n", i,arr[i]);
+        }
     }
 }
