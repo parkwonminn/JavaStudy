@@ -5,7 +5,7 @@ class Customer {
     int colaCount;
 
     void pay(Store store, int money) {
-        //1내보규금액에서 money 차감
+        //1내보유금액에서 money 차감
         myMoney = money;
         //2지정된 store 에 money 를 전달
         int cnt=store.returnCola(money);
@@ -66,7 +66,7 @@ public class C02StoreMain {
         Store Gs반월 = new Store(10000,100,1000); //보유 금액, 클라개수, 콜라가격
         //구매하기
         hong.pay(Gs감삼, 2000);
-        jung.pay(Gs감삼,3000);
+        jung.pay(Gs반월,3000);
         //확인
         System.out.println("----------고객 정보 확인 ---------------");
         System.out.println(hong);
