@@ -25,10 +25,28 @@ class Son extends Parent{
     Son() {
         super(); // 상위클래스 디폴트 생성자 호출!
         System.out.println("Son() 생성자 호출!");
+
+    }
+    Son(int x) {
+        super(x);
+        System.out.println("Son(int x) 생성자 호출");
+    }
+    Son(int x, int y) {
+        super(x,y);
+        System.out.println("Son(int x, int y) 생성자 호출");
+    }
+    Son(int x, int y, int z) {
+        super(x,y);
+        this.z=z;
+        System.out.println("Son(int x, int y, int z) 생성자 호출");
     }
 }
 public class C02InheritanceMain{
     public static void main(String[] args) {
-        Son ob = new Son();
+        Son ob1 = new Son();
+        Son ob2 = new Son(10);
+        Son ob3 = new Son(10,20);
+        Son ob4 = new Son(10,20,30);
+
     }
 }
