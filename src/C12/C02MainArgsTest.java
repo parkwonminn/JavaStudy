@@ -5,6 +5,5 @@ public class C02MainArgsTest {
         System.out.println("배열 길이 : " + args.length);
         for (String str : args)
             System.out.println(str);
-
     }
 }
