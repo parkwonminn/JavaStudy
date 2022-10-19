@@ -20,6 +20,16 @@ class Parttimer extends employee {
         super(name, age, addr);
         this.hourpay = hourpay;
     }
+
+    @Override
+    public String toString() {
+        return "Parttimer{" +
+                "hourpay=" + hourpay +
+                ", name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", addr='" + addr + '\'' +
+                '}';
+    }
 }
 
 class Reguluar extends employee {
@@ -29,6 +39,7 @@ class Reguluar extends employee {
         super(name, age, addr);
         this.salary = salary;
     }
+
 }
 
 public class C03PRac {
