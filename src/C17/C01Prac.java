@@ -31,5 +31,8 @@ public class C01Prac {
         System.out.println(pos1.equals(pos2));
         System.out.println(pos2.equals(pos3));
         System.out.println(pos1.equals(pos3));
+
+        //String 클래스
+
     }
 }
