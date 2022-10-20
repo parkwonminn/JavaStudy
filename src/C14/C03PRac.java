@@ -1,6 +1,6 @@
 package C14;
 
-class employee //직원
+abstract class employee //직원
 {
     String name;
     String age;
@@ -11,6 +11,7 @@ class employee //직원
         this.age = age;
         this.addr = addr;
     }
+    abstract void show();
 }
 
 class Parttimer extends employee {
@@ -30,6 +31,10 @@ class Parttimer extends employee {
                 ", addr='" + addr + '\'' +
                 '}';
     }
+    @Override
+    void show() {
+        System.out.printf("시간제 근로자 : %s %s %d\n", name,addr,addr,hourpay);
+    }
 }
 
 class Reguluar extends employee {
@@ -39,7 +44,10 @@ class Reguluar extends employee {
         super(name, age, addr);
         this.salary = salary;
     }
-
+    @Override
+    void show() {
+        System.out.printf("시간제 근로자 : %s %s %d\n", name,addr,addr,salary);
+    }
 }
 
 public class C03PRac {
